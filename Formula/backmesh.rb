@@ -1,21 +1,21 @@
 class Backmesh < Formula
   desc "CI runners for GitHub Actions in your own cloud"
   homepage "https://github.com/backmesh/backmesh-releases"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.0/backmesh-darwin-arm64.tar.gz"
-    sha256 "b98a11ed75d636bb43ce1e03c3b94933e510bd5f7720c1c732e267d2a9265074"
+    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.1/backmesh-darwin-arm64.tar.gz"
+    sha256 "607f5f6f8ad74fc1f17ad76f30c795124b540130d6d0c31f2da3aa32e3be4e79"
   elsif OS.mac?
-    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.0/backmesh-darwin-x64.tar.gz"
-    sha256 "be8e7a4a3642636925d0de060b3a900b224b13bb679faf1c717b80ce12e34c9e"
+    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.1/backmesh-darwin-x64.tar.gz"
+    sha256 "ab95b1cc6880d0bfa35c8e592a803abc638d27ce3c49c6a0ac9835715e8093d1"
   elsif Hardware::CPU.arm?
-    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.0/backmesh-linux-arm64.tar.gz"
-    sha256 "b7f35a9d845fb7cba08d6d738ba67a44449518750ee5ad82357de5a9b97dc757"
+    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.1/backmesh-linux-arm64.tar.gz"
+    sha256 "1f47923432da0baeccdb0cf77ed0a475bddcd4b2dac9b7476814f0671ddc2c39"
   else
-    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.0/backmesh-linux-x64.tar.gz"
-    sha256 "bfeb8b923425e621b051f03eceda7b20bd10ba7572ec74ed8401868b5e1a8a8b"
+    url "https://github.com/backmesh/backmesh-releases/releases/download/v0.5.1/backmesh-linux-x64.tar.gz"
+    sha256 "e5e115759e6b2a3cfc55c1a757aa284c0556b7a0ba4b975a55b5ede0efc9efb0"
   end
 
   def install
